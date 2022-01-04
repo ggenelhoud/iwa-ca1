@@ -9,6 +9,7 @@
             <th>Director</th>
             <th>Studio</th>
             <th>Year</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -19,6 +20,7 @@
                 <td><xsl:value-of select="Director"/></td>
                 <td><xsl:value-of select="Studio"/></td>
                 <td><xsl:value-of select="Year"/></td>
+                <td><button class="deleteBtn">Delete</button><td>
             </tr>
         </xsl:for-each>
     </tbody>
