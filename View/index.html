@@ -38,9 +38,14 @@
                 <div id="results" class="col-lg-8 order-2 mb-5"></div>
                 <div class="col-lg-4 order-1 mb-3">
                     <div class="d-grid gap-2">
-                        <button id="append" class="btn btn-primary btn-block mt-3" onClick="append()">Submit</button>
-                        <button id="delete" class="btn btn-danger btn-block">Delete</button>
-                        <p class="text-muted text-center">To delete an entry, click the required row first</p>
+                        <div class="editMovies">
+                            <div class="text-left">Title: <input type="text" name="tname" id="title" placeholder="e.g. The Purge"></div><br><br>
+                            <div class="text-left">Genre: <input type="text" name="gname" id="genre" placeholder="e.g. Drama"></div><br><br>
+                            <div class="text-left">Director: <input type="text" name="dname" id="director" placeholder="e.g. David Souza"></div><br><br>
+                            <div class="text-left">Studio: <input type="text" name="sname" id="studio" placeholder="e.g. Paramount Pictures"></div><br><br>
+                            <div class="text-left">Year: </div><div class="yearDate"><input type="date" name="mNumber" id="mNumber"></div><br><br>
+                            <button onclick="editRow();" class="editRowBtn">Submit</button><br><br>
+                        </div>  
                     </div>
                 </div>
             </div>
