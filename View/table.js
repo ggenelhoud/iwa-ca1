@@ -15,9 +15,13 @@ function draw_table() {
     $.getHTMLuncached("/get/html");
 };
 
+function add_movie(){
+    $("body").on("click", ".insertRowBtn", function () {
+        
+    });
+}
 
 function delete_movie() {
-
     $("body").on("click", ".deleteBtn", function () {
         $(this).parents('tr').remove();
     });
