@@ -9,7 +9,7 @@ const   express = require('express'), //Allows to respond to HTTP requests, defi
 const   router = express(), //Instantiating Express
         server = http.createServer(router); //Instantiating the server
 
-router.use(express.static(path.resolve(__dirname,'views'))); //Serving static content from "views" folder
+router.use(express.static(path.resolve(__dirname,'View'))); //Serving static content from "views" folder
 router.use(express.json());
 
 function XMLtoJSON(filename, cb){
