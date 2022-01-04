@@ -76,6 +76,37 @@
   }
 }
 
+.editRowBtn{
+	background-color: green;
+	padding: 10px 10px;
+	border: 1px solid black;
+	color: white;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+.deleteRowBtn{
+	background-color: red;
+	padding: 10px 10px;
+	border: 1px solid black;
+	color: white;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+.deleteBtn{
+  background-color: red;
+	padding: 0px 5px;
+	border: 1px solid black;
+	color: white;
+	margin: 2px 0;
+	border-radius: 1px;
+}
+
+.editMovies{
+  display:grid;
+	width:min-content;
+	margin: 0 auto;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
