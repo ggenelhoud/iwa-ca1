@@ -23,6 +23,7 @@ function add_movie(){
 
 function delete_movie() {
     $("body").on("click", ".deleteBtn", function () {
+        if(confirm("Are you sure you want to remove this?"))
         $(this).parents('tr').remove();
     });
 };
