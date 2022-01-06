@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Movies</title>
-        <!-- Favicon
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/movies.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
-        <script src="table.js"></script>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Movies</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Movies</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/movies.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="table.js"></script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <div class="row">
-                <div class="text-center mt-5">
-                    <h1>Welcome to the Movies DB</h1>
-                </div>
-                <div id="results" class="col-lg-8 order-2 mb-5"></div>
-                <div class="col-lg-4 order-1 mb-3">
-                    <div class="d-grid gap-2">
-                        <div class="editMovies">
-                            <div class="text-left">Title: <input type="text" name="tname" id="title" placeholder="e.g. The Purge"></div><br><br>
-                            <div class="text-left">Genre: <input type="text" name="gname" id="genre" placeholder="e.g. Drama"></div><br><br>
-                            <div class="text-left">Director: <input type="text" name="dname" id="director" placeholder="e.g. David Souza"></div><br><br>
-                            <div class="text-left">Studio: <input type="text" name="sname" id="studio" placeholder="e.g. Paramount Pictures"></div><br><br>
-                            <div class="text-left">Year: </div><div class="yearDate"><input type="date" name="mNumber" id="mNumber"></div><br><br>
-                            <button onclick="editRow();" class="insertRowBtn">Submit</button><br><br>
-                        </div>  
-                    </div>
-                </div>
+            <a class="navbar-brand" href="#">Movies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                </ul>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <!-- <script src="js/scripts.js"></script> -->
-    </body>
+    </nav>
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <div class="text-center mt-5">
+                <h1>Welcome to the Movies DB</h1>
+            </div>
+                <div id="results" class="col-lg-8 order-2 mb-5"></div>
+                <div class="col-lg-4 order-1 mb-3">
+                    <form>
+                    <div class="d-grid gap-2">
+                        <div class="editMovies">
+                            <div class="text-left">Title: <input type="text" name="titleName" id="titleName"
+                                    placeholder="e.g. The Purge"></div><br><br>
+                            <div class="text-left">Genre: <input type="text" name="genreName" id="genreName"
+                                    placeholder="e.g. Drama"></div><br><br>
+                            <div class="text-left">Director: <input type="text" name="directorName" id="directorName"
+                                    placeholder="e.g. David Souza"></div><br><br>
+                            <div class="text-left">Studio: <input type="text" name="studioName" id="studioName"
+                                    placeholder="e.g. Paramount Pictures"></div><br><br>
+                            <div class="text-left">Year: </div>
+                            <div class="yDate"><input type="number" min="1900" max="2022" name="yDate" id="yDate"></div><br><br>
+                            <button onclick="insertNewMovie();" class="insertRowBtn" type="submit">Submit</button><br><br>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
