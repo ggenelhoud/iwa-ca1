@@ -20,6 +20,7 @@
                 <td><xsl:value-of select="Director"/></td>
                 <td><xsl:value-of select="Studio"/></td>
                 <td><xsl:value-of select="Year"/></td>
+                <!-- Adding the delete button on each row -->
                 <td><button class="deleteBtn">Delete</button><td>
             </tr>
         </xsl:for-each>
