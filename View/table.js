@@ -27,7 +27,7 @@ function delete_movie() {
     });
 };
 
-function insertNewMovie(data){
+function insertNewMovie(){
     event.preventDefault();
     var table = document.getElementById("moviesTable").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
